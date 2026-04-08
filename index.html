@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vantage Visas — Premium South African visa agency. Tourist visas, yacht crew visas, and the 100% Service Fee Refund Guarantee." />
+  <title>Vantage Visas — Smooth Sailing Through Every Border</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚓</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================================================
+     NAVIGATION
+=================================================== -->
+<nav class="nav" id="main-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a class="nav-logo" href="#" data-page="home">
+      <img src="logo.jpeg" alt="Vantage Visas" class="nav-logo-img" />
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="tourist">Tourist Hub</a></li>
+      <li><a href="#" data-page="crew">Yacht Crew Elite</a></li>
+      <li><a href="#" data-page="assessment">Visa Assessment</a></li>
+    </ul>
+
+    <!-- Email in nav -->
+    <a class="nav-email" href="mailto:rowanvdmerwe@gmail.com">rowanvdmerwe@gmail.com</a>
+
+    <!-- Desktop CTA -->
+    <a class="btn btn-gold nav-cta" href="#" data-page="assessment">Start Free Assessment</a>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="nav-mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+  <button class="nav-mobile-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+  <img src="logo.jpeg" alt="Vantage Visas" class="mobile-nav-logo" />
+  <a href="#" data-page="home">Home</a>
+  <a href="#" data-page="tourist">Tourist Hub</a>
+  <a href="#" data-page="crew">Yacht Crew Elite</a>
+  <a href="#" data-page="assessment">Visa Assessment</a>
+  <a class="btn btn-gold" href="#" data-page="assessment">Start Free Assessment</a>
+  <a class="mobile-nav-email" href="mailto:rowanvdmerwe@gmail.com">rowanvdmerwe@gmail.com</a>
+</div>
+
+
+<!-- ===================================================
+     PAGES (SPA)
+=================================================== -->
+
+<!-- ──────────────────────────────────────────────────
+     PAGE: HOME
+────────────────────────────────────────────────── -->
+<div class="page" id="page-home">
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-slider" id="hero-slider">
+
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=1600&q=80')"></div>
+
+      <!-- Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Carousel controls -->
+      <button class="hero-arrow hero-arrow--prev" id="hero-prev" aria-label="Previous slide">&#8249;</button>
+      <button class="hero-arrow hero-arrow--next" id="hero-next" aria-label="Next slide">&#8250;</button>
+
+      <!-- Dots -->
+      <div class="hero-dots" aria-label="Slide indicators">
+        <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tagline">Premium South African Visa Agency</span>
+
+        <h1>Your Global<br /><em>Vantage Point.</em></h1>
+
+        <p class="hero-slogan">SMOOTH SAILING THROUGH EVERY BORDER.</p>
+
+        <p class="hero-sub">
+          Expert visa guidance for South Africans ready to explore the world —
+          from the UK's historic streets to Monaco's superyacht docks.
+          We handle the paperwork. You handle the adventure.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#" data-page="assessment">
+            ⚡ Get My Free Assessment
+          </a>
+          <a class="btn btn-outline-white" href="#" data-page="tourist">
+            Explore Destinations
+          </a>
+        </div>
+
+        <div class="hero-guarantee">
+          <span class="guarantee-icon">🛡️</span>
+          <span>100% Service Fee Refund Guarantee — if your visa is denied</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">scroll</div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-strip-inner">
+        <div class="trust-item"><span class="trust-icon">✅</span><span>98.7% Visa Approval Rate</span></div>
+        <div class="trust-item"><span class="trust-icon">⚡</span><span>Express Processing Available</span></div>
+        <div class="trust-item"><span class="trust-icon">🛡️</span><span>100% Refund Guarantee</span></div>
+        <div class="trust-item"><span class="trust-icon">🇿🇦</span><span>South African Specialists</span></div>
+        <div class="trust-item"><span class="trust-icon">💬</span><span>WhatsApp Support</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Proven Track Record</span>
+        <h2 class="section-title">Numbers That Speak For Themselves</h2>
+        <p class="section-sub">Every stat below represents a South African who got their stamp. Your passport is next.</p>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number stat-gold" data-target="683" data-suffix="+">0+</div>
+          <div class="stat-label">Visas Approved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+          <div class="stat-label">Approval Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number stat-gold" data-target="19" data-suffix="">0</div>
+          <div class="stat-label">Countries Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="4" data-suffix=" yrs">0 yrs</div>
+          <div class="stat-label">In Operation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE BANNER -->
+  <section class="section section--off-white">
+    <div class="container">
+      <div class="guarantee-banner reveal">
+        <div class="guarantee-icon-large">🛡️</div>
+        <div class="guarantee-text">
+          <h3>Our 100% Service Fee Refund Guarantee</h3>
+          <p>
+            We're so confident in our process that if your visa application is denied
+            despite following our guidance completely, we'll refund our entire agency
+            service fee. No questions. No hassle.
+          </p>
+          <p class="disclaimer">
+            <strong>Disclaimer:</strong> Refund applies to Vantage Visas agency service fees only.
+            Government visa fees, courier fees, and third-party costs are non-refundable.
+            Guarantee is void if denial results from fraudulent documents, undisclosed criminal
+            records, failure to disclose prior visa denials, or missed embassy appointments.
+            Applies to first-time applications through Vantage Visas only.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section--off-white" id="reviews">
+    <div class="container">
+      <div class="reveal" style="text-align:center;margin-bottom:48px;">
+        <span class="section-label">Client Reviews</span>
+        <h2 class="section-title">Trusted by South African Travellers</h2>
+        <a class="trustpilot-link" href="#" target="_blank" rel="noopener">
+          <div class="trustpilot-badge" style="display:inline-flex;">
+            <span class="tp-logo">Trustpilot</span>
+            <span style="color:#00B67A;">★★★★★</span>
+            <span class="tp-score">4.9 / 5 · Excellent</span>
+          </div>
+        </a>
+      </div>
+      <div class="reviews-track-wrap reveal">
+        <div class="reviews-track" id="reviews-track">
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Got my US B1/B2 first try after two failed attempts with other agents. The team at Vantage knew exactly what the consulate wanted. Worth every rand."</p><div class="review-author">Marlize van der Merwe</div><div class="review-date">Cape Town · March 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Crew visa sorted in under 3 weeks. They know the yacht industry inside out — STCW, Seaman's Book, the whole checklist. Joining my first vessel in Antibes next month!"</p><div class="review-author">Riaan Potgieter</div><div class="review-date">Durban · February 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Schengen visa approved for our Italy anniversary trip. The EES prep info was super helpful — we felt fully prepared at the border. No stress whatsoever."</p><div class="review-author">Leandri &amp; Pieter Cronjé</div><div class="review-date">Johannesburg · April 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Needed a UK Visitor Visa urgently. WhatsApp response within minutes, everything sorted same day. This is how visa services should work in 2026."</p><div class="review-author">Taryn Bosman</div><div class="review-date">Pretoria · January 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Australia subclass 600 granted in 9 days. I honestly thought I'd have to delay my trip. These guys delivered when other agencies said it was impossible."</p><div class="review-author">Deon Lombard</div><div class="review-date">Stellenbosch · March 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Transparent pricing, no hidden fees, and they actually explained why each document was needed. Feel like I actually understand the visa process now."</p><div class="review-author">Kefilwe Dlamini</div><div class="review-date">Sandton · February 2026</div></div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Got my US B1/B2 first try after two failed attempts with other agents. The team at Vantage knew exactly what the consulate wanted. Worth every rand."</p><div class="review-author">Marlize van der Merwe</div><div class="review-date">Cape Town · March 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Crew visa sorted in under 3 weeks. They know the yacht industry inside out — STCW, Seaman's Book, the whole checklist. Joining my first vessel in Antibes next month!"</p><div class="review-author">Riaan Potgieter</div><div class="review-date">Durban · February 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Schengen visa approved for our Italy anniversary trip. The EES prep info was super helpful — we felt fully prepared at the border. No stress whatsoever."</p><div class="review-author">Leandri &amp; Pieter Cronjé</div><div class="review-date">Johannesburg · April 2026</div></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Needed a UK Visitor Visa urgently. WhatsApp response within minutes, everything sorted same day. This is how visa services should work in 2026."</p><div class="review-author">Taryn Bosman</div><div class="review-date">Pretoria · January 2026</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD MAGNET -->
+  <section class="section">
+    <div class="container">
+      <div class="lead-form reveal" id="lead-form-wrap">
+        <div class="grid-2" style="align-items:center;gap:56px;">
+          <div>
+            <span class="section-label" style="color:var(--gold);">Free Resource</span>
+            <h3>Get Your Free<br />Document Checklist</h3>
+            <p>Stop guessing. Get the exact checklist for your destination — updated for 2026. Zero spam. Just the docs you need.</p>
+          </div>
+          <form id="lead-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-name">Full Name</label>
+                <input type="text" id="lead-name" name="name" placeholder="Your name" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="lead-email">Email Address</label>
+                <input type="email" id="lead-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-dest">Destination</label>
+                <select id="lead-dest" name="destination">
+                  <option value="">Choose your destination…</option>
+                  <option>United Kingdom</option>
+                  <option>USA</option>
+                  <option>Schengen (France / Italy)</option>
+                  <option>Australia</option>
+                  <option>UAE (Dubai)</option>
+                  <option>Portugal</option>
+                  <option>Mauritius</option>
+                  <option>Turkey</option>
+                  <option>Yacht Crew Visa</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
+              📋 Send Me the Checklist
+            </button>
+            <p class="form-disclaimer">By submitting you agree to be contacted via WhatsApp. We don't share your data.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS PREVIEW -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="reveal" style="text-align:center;margin-bottom:48px;">
+        <span class="section-label">Top Destinations</span>
+        <h2 class="section-title" style="color:var(--white);">Where Are You Headed?</h2>
+        <p style="color:rgba(255,255,255,0.65);max-width:500px;margin:0 auto;">
+          From Schengen city breaks to US B1/B2 visas — we've navigated every process.
+        </p>
+      </div>
+
+      <div class="destinations-grid reveal">
+        <div class="dest-card" data-dest="uk">
+          <div class="dest-flag">🇬🇧</div>
+          <div class="dest-name">United Kingdom</div>
+          <div class="dest-meta">Visitor Visa · Electronic Travel Authorisation</div>
+        </div>
+        <div class="dest-card" data-dest="usa">
+          <div class="dest-flag">🇺🇸</div>
+          <div class="dest-name">USA</div>
+          <div class="dest-meta">B1/B2 Tourist · H-2A Agricultural</div>
+        </div>
+        <div class="dest-card" data-dest="schengen">
+          <div class="dest-flag">🇪🇺</div>
+          <div class="dest-name">Schengen / Europe</div>
+          <div class="dest-meta">Short Stay · Seafarer Type D</div>
+        </div>
+        <div class="dest-card" data-dest="australia">
+          <div class="dest-flag">🇦🇺</div>
+          <div class="dest-name">Australia</div>
+          <div class="dest-meta">Visitor Subclass 600</div>
+        </div>
+        <div class="dest-card" data-dest="uae">
+          <div class="dest-flag">🇦🇪</div>
+          <div class="dest-name">UAE (Dubai)</div>
+          <div class="dest-meta">Visit Visa · Transit Visa</div>
+        </div>
+        <div class="dest-card" data-dest="crew">
+          <div class="dest-flag">⚓</div>
+          <div class="dest-name">Yacht Crew Elite</div>
+          <div class="dest-meta">B1/B2 Crew Endorsement · Schengen Seafarer</div>
+        </div>
+      </div>
+
+      <!-- Detail panels -->
+      <div id="dest-detail-uk" class="dest-detail">
+        <h4>🇬🇧 United Kingdom — What You Need to Know</h4>
+        <p>South Africans require a UK Visitor Visa or the new Electronic Travel Authorisation (ETA) depending on travel purpose. The Standard Visitor Visa requires proof of funds, return flights, and accommodation. Vantage Visas handles the full application from biometrics to approval.</p>
+        <a class="btn btn-gold" href="#" data-page="assessment" style="margin-top:20px;display:inline-flex;">Start UK Assessment →</a>
+      </div>
+      <div id="dest-detail-usa" class="dest-detail">
+        <h4>🇺🇸 USA — What You Need to Know</h4>
+        <p>The US B1/B2 is one of the most scrutinised visas globally. DS-160, SEVIS fee, and consulate interview are all mandatory. Vantage Visas prepares your entire application, coaches you for the interview, and ensures your financial profile meets consulate standards.</p>
+        <a class="btn btn-gold" href="#" data-page="assessment" style="margin-top:20px;display:inline-flex;">Start USA Assessment →</a>
+      </div>
+      <div id="dest-detail-schengen" class="dest-detail">
+        <h4>🇪🇺 Schengen — What You Need to Know</h4>
+        <p>The Schengen Area covers 27 European countries. Your application goes to the consulate of your primary destination. With EES active from 2026, SA travellers face new biometric requirements at borders. We handle the checklist from A to Z.</p>
+        <a class="btn btn-gold" href="#" data-page="assessment" style="margin-top:20px;display:inline-flex;">Start Schengen Assessment →</a>
+      </div>
+      <div id="dest-detail-australia" class="dest-detail">
+        <h4>🇦🇺 Australia — What You Need to Know</h4>
+        <p>The Visitor Visa (Subclass 600) is processed online. Average processing time is 20-40 days, but express routes exist. Financial proof, health declarations, and character requirements apply. We've gotten clients approved in under 10 days.</p>
+        <a class="btn btn-gold" href="#" data-page="assessment" style="margin-top:20px;display:inline-flex;">Start Australia Assessment →</a>
+      </div>
+      <div id="dest-detail-uae" class="dest-detail">
+        <h4>🇦🇪 UAE — What You Need to Know</h4>
+        <p>South Africans can obtain a UAE Visit Visa on arrival for 30 days, but pre-application avoids airport queues. Business visit visas and long-stay options require full documentation. Vantage Visas handles all UAE visa categories.</p>
+        <a class="btn btn-gold" href="#" data-page="assessment" style="margin-top:20px;display:inline-flex;">Start UAE Assessment →</a>
+      </div>
+      <div id="dest-detail-crew" class="dest-detail">
+        <h4>⚓ Yacht Crew Elite — What You Need to Know</h4>
+        <p>Whether you're joining a vessel in the Mediterranean or dockwalking in Fort Lauderdale, the correct visa is critical. We specialise in B1/B2 Crew Endorsements and Schengen Seafarer Type D visas. No seafarer left behind.</p>
+        <a class="btn btn-gold" href="#" data-page="crew" style="margin-top:20px;display:inline-flex;">View Yacht Crew Hub →</a>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ──────────────────────────────────────────────────
+     PAGE: TOURIST HUB
+────────────────────────────────────────────────── -->
+<div class="page" id="page-tourist">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Tourist Hub</span>
+      <h1>Tourist Visa Services</h1>
+      <p>All the visas South Africans need — expertly handled.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="reveal" style="margin-bottom:48px;">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Tourist Visa Packages</h2>
+        <p class="section-sub">We handle every step — from document preparation to application submission and interview coaching.</p>
+      </div>
+
+      <div class="grid-3 reveal">
+        <div class="service-card">
+          <div class="service-icon">🇬🇧</div>
+          <h3>United Kingdom</h3>
+          <p>Standard Visitor Visa, Electronic Travel Authorisation (ETA), and long-stay options. Full consulate interview preparation included.</p>
+          <ul class="service-features">
+            <li>DS-160 assistance</li>
+            <li>Financial profile preparation</li>
+            <li>Interview coaching</li>
+            <li>Document checklist</li>
+          </ul>
+          <a class="btn btn-outline-gold" href="#" data-page="assessment" style="margin-top:auto;">Get Started</a>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">🇺🇸</div>
+          <h3>USA B1/B2</h3>
+          <p>The most sought-after visa for SA travellers. Tourist, business, and yacht crew endorsements. End-to-end consulate preparation.</p>
+          <ul class="service-features">
+            <li>DS-160 completion</li>
+            <li>Consulate appointment booking</li>
+            <li>Mock interview coaching</li>
+            <li>Crew endorsement letters</li>
+          </ul>
+          <a class="btn btn-gold" href="#" data-page="assessment" style="margin-top:auto;">Get Started</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🇪🇺</div>
+          <h3>Schengen Zone</h3>
+          <p>Access 27 European countries on a single visa. We handle the full application and EES biometric preparation for 2026.</p>
+          <ul class="service-features">
+            <li>Embassy selection guidance</li>
+            <li>Insurance sourcing</li>
+            <li>EES biometric prep</li>
+            <li>Itinerary building</li>
+          </ul>
+          <a class="btn btn-outline-gold" href="#" data-page="assessment" style="margin-top:auto;">Get Started</a>
+        </div>
+      </div>
+
+      <div class="grid-3 reveal" style="margin-top:32px;">
+        <div class="service-card">
+          <div class="service-icon">🇦🇺</div>
+          <h3>Australia</h3>
+          <p>Visitor Subclass 600. Online application with biometric requirements. Express options available — we've achieved approvals in under 10 days.</p>
+          <a class="btn btn-outline-gold" href="#" data-page="assessment" style="margin-top:auto;">Get Started</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🇦🇪</div>
+          <h3>UAE & Dubai</h3>
+          <p>Visit visas, transit visas, and long-stay options for the UAE. Smooth and fast — ideal for layovers and business travel.</p>
+          <a class="btn btn-outline-gold" href="#" data-page="assessment" style="margin-top:auto;">Get Started</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌍</div>
+          <h3>All Other Destinations</h3>
+          <p>Canada, New Zealand, Japan, Portugal — if you need a visa, we can help. Contact us for any destination not listed above.</p>
+          <a class="btn btn-outline-gold" href="#" data-page="assessment" style="margin-top:auto;">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /page-tourist -->
+
+
+<!-- ──────────────────────────────────────────────────
+     PAGE: YACHT CREW ELITE
+────────────────────────────────────────────────── -->
+<div class="page" id="page-crew">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Yacht Crew Elite</span>
+      <h1>Seafarer Visa Services</h1>
+      <p>Specialised visa solutions for South African yacht crew — B1/B2, Schengen Seafarer, and beyond.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="reveal" style="margin-bottom:48px;">
+        <span class="section-label">Crew Visas</span>
+        <h2 class="section-title">Built for the Yachting Industry</h2>
+        <p class="section-sub">We understand STCW, Seaman's Books, crew contracts, and what consulates actually want to see. No guesswork.</p>
+      </div>
+
+      <!-- US B1/B2 Crew Card -->
+      <div class="visa-card reveal">
+        <div class="visa-card-header">
+          <div>
+            <h3>🇺🇸 US B1/B2 with Crew Endorsement</h3>
+            <p style="margin-top:6px;">For SA crew joining or dockwalking in US waters — Fort Lauderdale, Newport, Annapolis.</p>
+          </div>
+          <span class="visa-type-badge">USA</span>
+        </div>
+        <p>The B1/B2 visa with a crew endorsement is the industry-standard entry document for SA seafarers entering the US to work aboard a foreign-flagged vessel. The endorsement must be obtained during the consulate interview — it cannot be added later.</p>
+        <h4 style="margin-top:28px;margin-bottom:16px;">Document Checklist</h4>
+        <div class="crew-checklist-grid">
+          <ul class="checklist">
+            <li>Valid SA Passport (6+ months validity)</li>
+            <li>Completed DS-160 application form</li>
+            <li>SEVIS / MRV fee payment receipt</li>
+            <li>Seaman's Book (Continuous Discharge Book)</li>
+            <li>Contract of Employment (LOE from captain/owner)</li>
+          </ul>
+          <ul class="checklist">
+            <li>Crew list / letter from vessel's captain</li>
+            <li>Details of the vessel (flag state, port of registry, IMO number)</li>
+            <li>Bank statements</li>
+            <li>Evidence of intent to return to SA</li>
+            <li>STCW Basic Safety Training Certificate</li>
+            <li>SAMSA Certificate of Competency (if applicable)</li>
+          </ul>
+        </div>
+        <div class="warning-box" style="margin-top:24px;">
+          ⚠️ <strong>Dockwalkers:</strong> Arriving in the US to look for crew work on a tourist visa is technically a violation of US immigration law. Vantage Visas advises all clients on the correct legal route — the B1 endorsement must be obtained in advance.
+        </div>
+      </div>
+
+      <!-- Schengen Seafarer Card -->
+      <div class="visa-card reveal">
+        <div class="visa-card-header">
+          <div>
+            <h3>🇪🇺 Schengen Seafarer Visa (Type D / Crew Endorsement)</h3>
+            <p style="margin-top:6px;">For SA crew joining vessels in the Mediterranean — Monaco, Antibes, Mallorca, Palma.</p>
+          </div>
+          <span class="visa-type-badge">EU / Schengen</span>
+        </div>
+        <p>The Schengen Seafarer Visa allows SA crew to transit through or work in Schengen territory aboard a vessel. Issued by the flag state's consulate or the consulate of the principal port of destination. The visa is tied to the vessel and voyage, not general tourism.</p>
+        <h4 style="margin-top:28px;margin-bottom:16px;">Document Checklist</h4>
+        <div class="crew-checklist-grid">
+          <ul class="checklist">
+            <li>Schengen visa application (Category D for seafarers)</li>
+            <li>Valid SA passport (3+ months beyond stay)</li>
+            <li>STCW Basic Safety Training Certificate</li>
+            <li>Seaman's Book (Continuous Discharge Book)</li>
+            <li>Contract of Employment / Letter of Engagement</li>
+            <li>Vessel details (flag, IMO, port of registry)</li>
+          </ul>
+          <ul class="checklist">
+            <li>Captain's letter confirming crew position</li>
+            <li>Travel insurance (€30,000 minimum cover)</li>
+            <li>Return flight booking to SA</li>
+            <li>SAMSA Certificate of Competency (if officer rank)</li>
+            <li>Yellow Fever certificate if transiting through Africa</li>
+            <li>Port clearance documents (if provided by captain)</li>
+          </ul>
+        </div>
+        <div class="warning-box" style="margin-top:24px;">
+          ⚠️ <strong>EES Active from April 2026:</strong> Even seafarers are subject to the EU's Entry/Exit System. Your biometrics will be captured at your first Schengen border crossing. Consult Vantage Visas to ensure you're on the correct visa category.
+        </div>
+      </div>
+
+      <div class="reveal" style="text-align:center;margin-top:48px;">
+        <h3 style="margin-bottom:12px;">Ready to join your first vessel?</h3>
+        <p style="margin-bottom:24px;max-width:500px;margin-left:auto;margin-right:auto;">Let's figure out exactly which visa you need — in under 5 minutes.</p>
+        <a class="btn btn-gold" href="#" data-page="assessment">Start the Crew Assessment →</a>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /page-crew -->
+
+
+<!-- ──────────────────────────────────────────────────
+     PAGE: VISA READINESS ASSESSMENT (10 questions)
+────────────────────────────────────────────────── -->
+<div class="page" id="page-assessment">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Free Assessment</span>
+      <h1>Visa Readiness Assessment</h1>
+      <p>10 questions. 3 minutes. A personalised visa strategy — on WhatsApp, free.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container" style="max-width:760px;">
+
+      <div class="assessment-wrap">
+
+        <!-- Progress bar -->
+        <div class="assessment-progress-wrap">
+          <div class="assessment-progress-bar" id="assessment-progress-bar"></div>
+          <span class="assessment-progress-label" id="assessment-progress-label">Step 1 of 10</span>
+        </div>
+
+        <!-- ── STEP 1: Full Name ── -->
+        <div class="assessment-step active" data-step="1">
+          <p class="assessment-step-label">Question 1 of 10</p>
+          <h2 class="assessment-question">What's your full name?</h2>
+          <div class="assessment-input-group">
+            <input type="text" id="a-name" name="fullname" class="assessment-text-input" placeholder="e.g. Rowan van der Merwe" autocomplete="name" />
+          </div>
+          <div class="assessment-nav">
+            <span></span>
+            <button class="btn btn-gold assessment-next" id="next-1">Next →</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 2: WhatsApp Number ── -->
+        <div class="assessment-step" data-step="2">
+          <p class="assessment-step-label">Question 2 of 10</p>
+          <h2 class="assessment-question">What's your WhatsApp number?</h2>
+          <p class="assessment-hint">We'll use this to send your personalised assessment directly to your WhatsApp.</p>
+          <div class="assessment-input-group">
+            <input type="tel" id="a-phone" name="whatsapp" class="assessment-text-input" placeholder="e.g. 082 123 4567" autocomplete="tel" />
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+            <button class="btn btn-gold assessment-next" id="next-2">Next →</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 3: Travel Goal ── -->
+        <div class="assessment-step" data-step="3">
+          <p class="assessment-step-label">Question 3 of 10</p>
+          <h2 class="assessment-question">What is your primary travel goal?</h2>
+          <div class="assessment-options">
+            <button class="assessment-option" data-value="tourist">
+              <span class="opt-icon">🏖️</span>
+              <div class="opt-title">Tourist / Leisure</div>
+              <div class="opt-desc">Holidays, visiting family, leisure travel</div>
+            </button>
+            <button class="assessment-option" data-value="crew_join">
+              <span class="opt-icon">⚓</span>
+              <div class="opt-title">Yacht Crew — Joining Vessel</div>
+              <div class="opt-desc">I have a contract to join a specific vessel</div>
+            </button>
+            <button class="assessment-option" data-value="crew_walk">
+              <span class="opt-icon">🛥️</span>
+              <div class="opt-title">Yacht Crew — Dockwalking</div>
+              <div class="opt-desc">I'm looking for crew work on arrival</div>
+            </button>
+            <button class="assessment-option" data-value="h2a">
+              <span class="opt-icon">🌾</span>
+              <div class="opt-title">H-2A Agricultural Work</div>
+              <div class="opt-desc">Seasonal agricultural employment in the US</div>
+            </button>
+            <button class="assessment-option" data-value="business_nomad">
+              <span class="opt-icon">💼</span>
+              <div class="opt-title">Business / Digital Nomad</div>
+              <div class="opt-desc">Business meetings, remote work abroad</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 4: Destination ── -->
+        <div class="assessment-step" data-step="4">
+          <p class="assessment-step-label">Question 4 of 10</p>
+          <h2 class="assessment-question">What is your desired destination?</h2>
+          <div class="assessment-options">
+            <button class="assessment-option" data-value="usa">
+              <span class="opt-icon">🇺🇸</span>
+              <div class="opt-title">USA</div>
+              <div class="opt-desc">B1/B2, H-2A, Crew Endorsement</div>
+            </button>
+            <button class="assessment-option" data-value="uk">
+              <span class="opt-icon">🇬🇧</span>
+              <div class="opt-title">United Kingdom</div>
+              <div class="opt-desc">Standard Visitor Visa, ETA</div>
+            </button>
+            <button class="assessment-option" data-value="schengen">
+              <span class="opt-icon">🇪🇺</span>
+              <div class="opt-title">Schengen / Europe</div>
+              <div class="opt-desc">27 European countries on one visa</div>
+            </button>
+            <button class="assessment-option" data-value="australia">
+              <span class="opt-icon">🇦🇺</span>
+              <div class="opt-title">Australia</div>
+              <div class="opt-desc">Visitor Subclass 600</div>
+            </button>
+            <button class="assessment-option" data-value="other">
+              <span class="opt-icon">🌍</span>
+              <div class="opt-title">Other Destination</div>
+              <div class="opt-desc">UAE, Canada, NZ, Japan, and more</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 5: Passport Status ── -->
+        <div class="assessment-step" data-step="5">
+          <p class="assessment-step-label">Question 5 of 10</p>
+          <h2 class="assessment-question">What is your current passport status?</h2>
+          <div class="assessment-options assessment-options--3col">
+            <button class="assessment-option" data-value="valid_sa">
+              <span class="opt-icon">✅</span>
+              <div class="opt-title">Valid SA Passport</div>
+              <div class="opt-desc">Green SA passport, valid 6+ months</div>
+            </button>
+            <button class="assessment-option" data-value="needs_renewal">
+              <span class="opt-icon">⚠️</span>
+              <div class="opt-title">Needs Renewal</div>
+              <div class="opt-desc">Expiring within 6 months or already expired</div>
+            </button>
+            <button class="assessment-option" data-value="foreign">
+              <span class="opt-icon">🌐</span>
+              <div class="opt-title">Foreign Passport</div>
+              <div class="opt-desc">I hold a non-SA passport</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 6: Visa History ── -->
+        <div class="assessment-step" data-step="6">
+          <p class="assessment-step-label">Question 6 of 10</p>
+          <h2 class="assessment-question">What is your visa application history?</h2>
+          <div class="assessment-options assessment-options--3col">
+            <button class="assessment-option" data-value="no_denials">
+              <span class="opt-icon">✅</span>
+              <div class="opt-title">No Previous Denials</div>
+              <div class="opt-desc">Clean visa record — no refusals</div>
+            </button>
+            <button class="assessment-option" data-value="one_denial">
+              <span class="opt-icon">⚠️</span>
+              <div class="opt-title">One Previous Denial</div>
+              <div class="opt-desc">Refused once — want to reapply</div>
+            </button>
+            <button class="assessment-option" data-value="multiple_denials">
+              <span class="opt-icon">🔴</span>
+              <div class="opt-title">Multiple / Recent Denials</div>
+              <div class="opt-desc">More than one refusal or recent denial</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 7: Criminal Background ── -->
+        <div class="assessment-step" data-step="7">
+          <p class="assessment-step-label">Question 7 of 10</p>
+          <h2 class="assessment-question">What is your criminal background status?</h2>
+          <p class="assessment-hint">All responses are strictly confidential and used only to assess your visa strategy.</p>
+          <div class="assessment-options assessment-options--3col">
+            <button class="assessment-option" data-value="no_record">
+              <span class="opt-icon">✅</span>
+              <div class="opt-title">No Record</div>
+              <div class="opt-desc">Clean criminal record</div>
+            </button>
+            <button class="assessment-option" data-value="minor_offense">
+              <span class="opt-icon">⚠️</span>
+              <div class="opt-title">Minor / Traffic Offense</div>
+              <div class="opt-desc">Old or minor infraction</div>
+            </button>
+            <button class="assessment-option" data-value="serious_case">
+              <span class="opt-icon">🔴</span>
+              <div class="opt-title">Serious / Pending Case</div>
+              <div class="opt-desc">Serious offense or case pending</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 8: Professional Status ── -->
+        <div class="assessment-step" data-step="8">
+          <p class="assessment-step-label">Question 8 of 10</p>
+          <h2 class="assessment-question">What is your current professional status?</h2>
+          <div class="assessment-options">
+            <button class="assessment-option" data-value="employed">
+              <span class="opt-icon">👔</span>
+              <div class="opt-title">Employed</div>
+              <div class="opt-desc">Full-time or part-time employment</div>
+            </button>
+            <button class="assessment-option" data-value="business_owner">
+              <span class="opt-icon">🏢</span>
+              <div class="opt-title">Business Owner</div>
+              <div class="opt-desc">I run my own business</div>
+            </button>
+            <button class="assessment-option" data-value="student">
+              <span class="opt-icon">🎓</span>
+              <div class="opt-title">Student</div>
+              <div class="opt-desc">Currently studying full or part-time</div>
+            </button>
+            <button class="assessment-option" data-value="freelancer">
+              <span class="opt-icon">💻</span>
+              <div class="opt-title">Unemployed / Freelancer</div>
+              <div class="opt-desc">Self-employed, freelancing, or currently between jobs</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 9: Financial Readiness ── -->
+        <div class="assessment-step" data-step="9">
+          <p class="assessment-step-label">Question 9 of 10</p>
+          <h2 class="assessment-question">How would you describe your financial readiness?</h2>
+          <div class="assessment-options assessment-options--3col">
+            <button class="assessment-option" data-value="self_funded">
+              <span class="opt-icon">💰</span>
+              <div class="opt-title">Sufficient Personal Funds</div>
+              <div class="opt-desc">I can show strong personal bank statements</div>
+            </button>
+            <button class="assessment-option" data-value="sponsored">
+              <span class="opt-icon">🤝</span>
+              <div class="opt-title">Financial Sponsor</div>
+              <div class="opt-desc">A family member or employer is sponsoring my trip</div>
+            </button>
+            <button class="assessment-option" data-value="saving">
+              <span class="opt-icon">🏦</span>
+              <div class="opt-title">Currently Saving</div>
+              <div class="opt-desc">Building towards the financial requirements</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 10: Travel Timeline ── -->
+        <div class="assessment-step" data-step="10">
+          <p class="assessment-step-label">Question 10 of 10</p>
+          <h2 class="assessment-question">What is your travel timeline?</h2>
+          <div class="assessment-options assessment-options--3col">
+            <button class="assessment-option" data-value="urgent">
+              <span class="opt-icon">🚨</span>
+              <div class="opt-title">Urgent — Under 30 Days</div>
+              <div class="opt-desc">I need this sorted fast. Express processing required.</div>
+            </button>
+            <button class="assessment-option" data-value="medium">
+              <span class="opt-icon">📅</span>
+              <div class="opt-title">1–3 Months</div>
+              <div class="opt-desc">Planning ahead with a firm deadline</div>
+            </button>
+            <button class="assessment-option" data-value="research">
+              <span class="opt-icon">🔭</span>
+              <div class="opt-title">Just Planning / Researching</div>
+              <div class="opt-desc">No fixed date yet — exploring options</div>
+            </button>
+          </div>
+          <div class="assessment-nav">
+            <button class="btn btn-outline-gold assessment-back">← Back</button>
+          </div>
+        </div>
+
+        <!-- ── RESULT ── -->
+        <div id="assessment-result" class="assessment-result" role="status" aria-live="polite">
+          <div class="result-icon">🎯</div>
+          <h3>Assessment Received.</h3>
+          <p class="result-headline">
+            A Vantage Visas expert will contact you shortly to secure your
+            <strong>100% Service Fee Refund Guarantee.</strong>
+          </p>
+          <p class="result-sub">We're opening WhatsApp now with your full profile so our team can review it immediately.</p>
+          <a id="assessment-result-cta" class="btn btn-gold" href="#" target="_blank" rel="noopener">
+            💬 Open WhatsApp Now
+          </a>
+          <p class="result-disclaimer">We respond within 2 business hours (SAST). Your data is confidential.</p>
+        </div>
+
+      </div><!-- /assessment-wrap -->
+
+      <p style="text-align:center;font-size:0.8rem;color:var(--text-light);margin-top:24px;">
+        This assessment is for initial guidance only and does not constitute legal immigration advice.
+        Visa requirements are subject to change. Always verify with official embassy sources.
+      </p>
+
+    </div>
+  </section>
+
+</div><!-- /page-assessment -->
+
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-logo">
+          <img src="logo.jpeg" alt="Vantage Visas" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          Premium visa assistance for South Africans ready to explore the world.
+          From tourist visas to yacht crew endorsements — we've got your passport covered.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+          <a href="https://wa.me/27794748331" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-page="tourist">Tourist Visas</a></li>
+          <li><a href="#" data-page="crew">Yacht Crew Visas</a></li>
+          <li><a href="#" data-page="assessment">Visa Assessment</a></li>
+          <li><a href="#" data-page="home">Document Checklists</a></li>
+          <li><a href="#" data-page="home">Express Processing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Top Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-page="tourist">🇬🇧 United Kingdom</a></li>
+          <li><a href="#" data-page="tourist">🇺🇸 USA</a></li>
+          <li><a href="#" data-page="tourist">🇪🇺 Schengen</a></li>
+          <li><a href="#" data-page="tourist">🇦🇺 Australia</a></li>
+          <li><a href="#" data-page="tourist">🇦🇪 UAE</a></li>
+          <li><a href="#" data-page="crew">⚓ Yacht Crew</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/27794748331" target="_blank" rel="noopener">💬 WhatsApp: +27 79 474 8331</a></li>
+          <li><a href="mailto:rowanvdmerwe@gmail.com">📧 rowanvdmerwe@gmail.com</a></li>
+          <li><a href="#">📍 Cape Town, South Africa</a></li>
+          <li><a href="#" class="trustpilot-link" target="_blank" rel="noopener">⭐ Read Our Reviews</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Vantage Visas. All rights reserved. South Africa.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ===================================================
+     WHATSAPP FLOATING BUTTON
+=================================================== -->
+<div class="wa-float" aria-label="Chat on WhatsApp">
+  <span class="wa-label">Chat with us</span>
+  <a class="wa-btn" id="wa-float-btn" href="https://wa.me/27794748331" target="_blank" rel="noopener" aria-label="Open WhatsApp chat">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
