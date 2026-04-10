@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-950: #050C1B;
+  --navy-900: #0A162E;
+  --gold: #D4AF37;
+  --gold-light: #E8C96A;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  background-color: var(--navy-950);
+  color: #F5EFE0;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212,175,55,0.08), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 40%, rgba(26,45,85,0.5), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 10% 70%, rgba(17,31,62,0.6), transparent 70%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Subtle grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/></svg>");
+}
+
+/* Gold hairline divider */
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,175,55,0.5), transparent);
+}
+
+/* Glassmorphism card */
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.015) 100%);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(212,175,55,0.18);
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5), inset 0 1px 0 0 rgba(255,255,255,0.06);
+}
+
+.glass-hover {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.glass-hover:hover {
+  border-color: rgba(212,175,55,0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(212,175,55,0.3), inset 0 1px 0 0 rgba(255,255,255,0.08);
+}
+
+/* Gold text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E8C96A 0%, #D4AF37 40%, #A8841F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Primary gold button */
+.btn-gold {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #050C1B;
+  background: linear-gradient(135deg, #E8C96A 0%, #D4AF37 50%, #A8841F 100%);
+  border: 1px solid rgba(212,175,55,0.6);
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px -10px rgba(212,175,55,0.5);
+}
+.btn-gold::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.5) 50%, transparent 70%);
+  background-size: 200% 100%;
+  background-position: -200% 0;
+  transition: background-position 0.8s ease;
+}
+.btn-gold:hover::before { background-position: 200% 0; }
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(212,175,55,0.6);
+}
+
+/* Outline gold button */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #E8C96A;
+  background: transparent;
+  border: 1px solid rgba(212,175,55,0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn-outline:hover {
+  background: rgba(212,175,55,0.08);
+  border-color: rgba(212,175,55,0.8);
+  color: #F5EFE0;
+}
+
+/* Section label */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #D4AF37;
+}
+.eyebrow::before {
+  content: "";
+  width: 2.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37);
+}
+
+/* WhatsApp pulse */
+@keyframes whatsappPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7), 0 10px 30px -5px rgba(0,0,0,0.5); }
+  50% { box-shadow: 0 0 0 20px rgba(37,211,102,0), 0 10px 30px -5px rgba(0,0,0,0.5); }
+}
+.wa-pulse { animation: whatsappPulse 2.2s ease-in-out infinite; }
+
+/* Stagger fade-in utility */
+.reveal { opacity: 0; animation: fadeUp 0.9s cubic-bezier(0.22,1,0.36,1) forwards; }
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal { transform: translateY(20px); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #050C1B; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #D4AF37, #8A6F20); border-radius: 10px; }
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Input styling for quiz */
+.field {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(212,175,55,0.2);
+  border-radius: 2px;
+  color: #F5EFE0;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.field:focus {
+  border-color: #D4AF37;
+  background: rgba(255,255,255,0.05);
+  outline: none;
+}
+.field::placeholder { color: rgba(245,239,224,0.4); }
